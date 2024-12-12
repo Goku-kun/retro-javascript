@@ -2,7 +2,7 @@ const button = document.getElementById("magic-button");
 const surprise = document.getElementById("surprise");
 const audio = new Audio("../public/audio/retro-music.mp3");
 
-button.addEventListener("click", () => {
+button.addEventListener("click", function btnClick() {
   audio.play();
   if (surprise.style.display === "none") {
     surprise.style.display = "block";
